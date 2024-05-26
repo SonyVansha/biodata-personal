@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700, 800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(13, 86, 110);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.container .left_Side {
+    position: relative;
+    background-color: #003147;
+    padding: 40px;
+}
+
+/* CSS Right */
+.container .right_Side {
+    position: relative;
+    background-color: #fff;
+    padding: 40px;
+}
+
+/* Responsife */
+@media (max-width: 1000px) {
+    .container {
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container .left_Side {
+        display: none;
+    }
+
+    .container .right_Side {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .about .box {
+        flex-direction: column;
+    }
+    
+    .about .box .year_company {
+        margin-bottom: 5px;
+    }
+
+
+}
